@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0c1526;
+  background-image: url("https://www.transparenttextures.com/patterns/starry-night.png");
+  min-width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.input-container {
+  margin-bottom: 15px;
+}
+
+label {
+  color: #ffffff;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  border: 2px solid #0cf79f;
+  border-radius: 5px;
+  background-color: #0c1526;
+  color: #ffffff;
+  outline: none;
+}
+
+input:focus {
+  border-color: #0c9ff7;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  width: 70px;
+  height: 70px;
+  border: none;
+  border-radius: 50%;
+  font-size: 36px;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+button.chill {
+  background-color: #0c9ff7;
+  color: #0cf79f;
+}
+
+button.focus {
+  background-color: #0cf79f;
+  color: #0c9ff7;
+}
+
+#mode-text {
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+@keyframes chill-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(12, 249, 159, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(12, 249, 159, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(12, 249, 159, 0);
+  }
+}
+
+@keyframes focus-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(12, 159, 247, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(12, 159, 247, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(12, 159, 247, 0);
+  }
+}

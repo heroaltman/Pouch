@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Pouch",
+  "version": "2.0",
+  "description": "A Chrome extension to help users stay focused by removing distractions on YouTube.",
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "permissions": ["activeTab", "scripting", "storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["remove_shorts.js", "youtube_saver.js", "focus_mode.js"]
+    }
+  ]
+}
